@@ -19,7 +19,7 @@
 #### Using Router
 Use Express Router to group the following routes and mount them based on the section header
 #### API
-- Define a get request that sends the string `You attempted to view a single item` at the path `localhost:[PORT_NUMBER]/api/[ITEM]`
+- Define a get request that sends the string `You attempted to view item [ITEM_ID]` at the path `localhost:[PORT_NUMBER]/api/[ITEM_ID]`
 - Create, test, and save endpoint in Postman
 - Define a get request that sends the string `You attempted to view all items` at the path `localhost:[PORT_NUMBER]/api`
 - Create, test, and save endpoint in Postman
@@ -32,5 +32,6 @@ Use Express Router to group the following routes and mount them based on the sec
 - Create, test, and save endpoint in Postman
 - Define a delete request that sends the string `You attempted to delete the user [USER_ID]` at the path `localhost:[PORT_NUMBER]/admin/user/[USER_ID]`
 - Create, test, and save endpoint in Postman
-- Define an update request that sends the string `You attempted to update the user [USER_ID]` at the path `localhost:[PORT_NUMBER]/admin/user/[USER_ID]`
+- Define an update request that sends the body of the request sent in Postman at the path `localhost:[PORT_NUMBER]/admin/user/[USER_ID]`
 - Create, test, and save endpoint in Postman
+    - Send a json object with properties `item_id`, `item_description`, and `item_price`
